@@ -8,7 +8,7 @@ import {
   DiGit,
 } from "react-icons/di";
 import { BiLogoTailwindCss, BiLogoLinkedinSquare } from "react-icons/bi";
-import img from "../assets/profile.png";
+// import img from "../assets/profile.png";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -60,7 +60,11 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={img} alt="profile-image" className="w-96 rounded-b-2xl" />
+          <img
+            src="https://placehold.co/600x400"
+            alt="profile-image"
+            className="w-80"
+          />
         </div>
       </div>
       <Footer />
