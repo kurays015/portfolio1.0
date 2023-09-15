@@ -24,7 +24,7 @@ const ProjectContainer = () => {
             }`}
           >
             <div className="flex items-center h-400px bg-slate-800 rounded-2xl">
-              <div className="m-2 w-400px">
+              <div className="m-4 w-400px">
                 <h1 className="text-3xl my-3 text-center font-bold">
                   {projectTitle}
                 </h1>
@@ -35,14 +35,14 @@ const ProjectContainer = () => {
                   <a
                     href={codeLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer hover:text-slate-100"
+                    className="flex items-center gap-1 cursor-pointer hover:text-slate-400"
                   >
                     Code{githubLogo}
                   </a>
                   <a
                     href={livePreviewLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer hover:text-slate-100"
+                    className="flex items-center gap-1 cursor-pointer hover:text-slate-400"
                   >
                     Live Preview{livePreviewLogo}
                   </a>
