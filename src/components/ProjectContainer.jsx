@@ -35,14 +35,14 @@ const ProjectContainer = () => {
                   <a
                     href={codeLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer hover:text-slate-600"
+                    className="flex items-center gap-1 cursor-pointer hover:text-slate-100"
                   >
                     Code{githubLogo}
                   </a>
                   <a
                     href={livePreviewLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer hover:text-slate-600"
+                    className="flex items-center gap-1 cursor-pointer hover:text-slate-100"
                   >
                     Live Preview{livePreviewLogo}
                   </a>

@@ -12,7 +12,7 @@ export const myProjectsData = [
     livePreviewLogo: <MdPreview className="text-3xl" />,
     livePreviewLink: "https://poke-app-react-two.vercel.app/",
     projectDescription:
-      "A PokéDex App that allows user to search their favorite pokemons in different generations, filter types, and play a guessing game.",
+      "PokéApp is your ultimate Pokédex companion. Explore the Pokémon universe, search for your favorite creatures across different generations, apply filters by type, and challenge yourself with a fun guessing game. Become a true Pokémon Master with PokéApp.",
     projectTitle: "PokéApp",
     projectImg: PokeApp,
   },
@@ -24,7 +24,7 @@ export const myProjectsData = [
     livePreviewLogo: <MdPreview className="text-3xl" />,
     livePreviewLink: "https://kurays015.github.io/MovieFlix",
     projectDescription:
-      "MovieFlix app is made using TMDb API, you can search upcoming movies, read synopsis, and watch their trailer.",
+      "MovieFlix is an immersive movie discovery app powered by the TMDb API. Explore a vast library of upcoming movies, read detailed synopsis, and watch thrilling trailers. Dive into the world of cinema with MovieFlix.",
     projectTitle: "MovieFlix",
     projectImg: MovieFlix,
   },
@@ -35,7 +35,7 @@ export const myProjectsData = [
     livePreviewLogo: <MdPreview className="text-3xl" />,
     livePreviewLink: "https://kurays015.github.io/AniMuah2/",
     projectDescription:
-      "AniMuah app is made using MyAnimeList (MAL) API. You can search thousands of upcoming and ongoing animes, and watch trailer.",
+      "AniMuah is your gateway to the anime world, powered by the MyAnimeList (MAL) API. Discover thousands of upcoming and ongoing anime series, dive into their intriguing trailers, and embark on unforgettable journeys with AniMuah. Explore, watch, and immerse yourself in the world of anime.",
     projectTitle: "AniMuah",
     projectImg: AniMuah,
   },
