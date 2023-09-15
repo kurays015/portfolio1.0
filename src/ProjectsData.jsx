@@ -20,7 +20,7 @@ export const myProjectsData = [
   {
     id: 2,
     codeLink: "https://github.com/kurays015/MovieFlix",
-    githubLogo: <DiGithubBadge />,
+    githubLogo: <DiGithubBadge className="text-3xl" />,
     livePreviewLogo: <MdPreview className="text-3xl" />,
     livePreviewLink: "https://kurays015.github.io/MovieFlix",
     projectDescription:
@@ -31,7 +31,7 @@ export const myProjectsData = [
   {
     id: 3,
     codeLink: "https://github.com/kurays015/AniMuah2",
-    githubLogo: <DiGithubBadge />,
+    githubLogo: <DiGithubBadge className="text-3xl" />,
     livePreviewLogo: <MdPreview className="text-3xl" />,
     livePreviewLink: "https://kurays015.github.io/AniMuah2/",
     projectDescription:

@@ -5,6 +5,7 @@ export default {
     extend: {
       height: {
         "80vh": "80vh",
+        "100vh": "100vh",
         "400px": "400px",
         "300px": "300px",
         "500px": "500px",
@@ -12,7 +13,7 @@ export default {
       },
       translate: {
         scrollUpIndexOne: "27%",
-        30: "30%",
+        30: "20%",
         scrollUpIndexTwo: "40%",
         scrollUpIndexThree: "50%",
       },
@@ -20,7 +21,7 @@ export default {
         transform: "transform",
       },
       transitionDuration: {
-        4: "3500ms",
+        4: "1500ms",
       },
       width: {
         "800px": "800px",

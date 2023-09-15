@@ -8,7 +8,6 @@ import {
   DiGit,
 } from "react-icons/di";
 import { BiLogoTailwindCss, BiLogoLinkedinSquare } from "react-icons/bi";
-// import img from "../assets/profile.png";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -67,7 +66,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <Footer />
+      <Footer isAbsolute={true} />
     </>
   );
 };

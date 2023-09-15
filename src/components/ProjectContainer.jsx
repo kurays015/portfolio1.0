@@ -1,5 +1,4 @@
 import { myProjectsData } from "../ProjectsData";
-import Footer from "./Footer";
 
 const ProjectContainer = () => {
   return (
@@ -20,33 +19,37 @@ const ProjectContainer = () => {
         ) => (
           <section
             key={id}
-            className={`text-white flex ${
+            className={`text-white flex mx-20 my-10 ${
               index % 2 === 0 ? "justify-start" : "justify-end"
             }`}
           >
-            <div className="flex items-center h-500px bg-gray-700 rounded-2xl m-4">
-              <div className="bg-slate-900 m-2">
-                <h1 className="text-3xl my-3 text-center">{projectTitle}</h1>
-                <p className="max-w-xl text-center">{projectDescription}</p>
+            <div className="flex items-center h-400px bg-slate-800 rounded-2xl">
+              <div className="m-2 w-400px">
+                <h1 className="text-3xl my-3 text-center font-bold">
+                  {projectTitle}
+                </h1>
+                <p className="max-w-xl text-center text-lg text-gray-600 dark:text-gray-400">
+                  {projectDescription}
+                </p>
                 <div className="flex gap-5 justify-center my-4">
                   <a
                     href={codeLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center gap-1 cursor-pointer hover:text-slate-600"
                   >
                     Code{githubLogo}
                   </a>
                   <a
                     href={livePreviewLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center gap-1 cursor-pointer hover:text-slate-600"
                   >
                     Live Preview{livePreviewLogo}
                   </a>
                 </div>
               </div>
               <div className="overflow-hidden rounded-r-2xl">
-                <div className="w-500px h-500px ">
+                <div className="w-500px h-400px ">
                   <a href={livePreviewLink} target="_blank">
                     <img
                       src={projectImg}
