@@ -30,6 +30,12 @@ export default {
         "400px": "400px",
         "500px": "500px",
       },
+      boxShadow: {
+        customShadow:
+          "rgba(0, 0, 0, 0.1) 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 4px 6px -1px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset",
+        textStackShadow:
+          "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;",
+      },
     },
   },
   plugins: [],

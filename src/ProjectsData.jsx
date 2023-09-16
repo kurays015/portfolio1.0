@@ -15,6 +15,12 @@ export const myProjectsData = [
       "PokéApp is your ultimate Pokédex companion. Explore the Pokémon universe, search for your favorite creatures across different generations, apply filters by type, and challenge yourself with a fun guessing game. Become a true Pokémon Master with PokéApp.",
     projectTitle: "PokéApp",
     projectImg: PokeApp,
+    techStack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "ReactJS" },
+    ],
   },
 
   {
@@ -27,6 +33,7 @@ export const myProjectsData = [
       "MovieFlix is an immersive movie discovery app powered by the TMDb API. Explore a vast library of upcoming movies, read detailed synopsis, and watch thrilling trailers. Dive into the world of cinema with MovieFlix.",
     projectTitle: "MovieFlix",
     projectImg: MovieFlix,
+    techStack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
   },
   {
     id: 3,
@@ -38,5 +45,6 @@ export const myProjectsData = [
       "AniMuah is your gateway to the anime world, powered by the MyAnimeList (MAL) API. Discover thousands of upcoming and ongoing anime series, dive into their intriguing trailers, and embark on unforgettable journeys with AniMuah. Explore, watch, and immerse yourself in the world of anime.",
     projectTitle: "AniMuah",
     projectImg: AniMuah,
+    techStack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
   },
 ];

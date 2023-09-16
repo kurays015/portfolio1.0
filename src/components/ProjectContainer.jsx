@@ -14,6 +14,7 @@ const ProjectContainer = () => {
             projectDescription,
             projectTitle,
             projectImg,
+            techStack,
           },
           index
         ) => (
@@ -23,7 +24,7 @@ const ProjectContainer = () => {
               index % 2 === 0 ? "justify-start" : "justify-end"
             }`}
           >
-            <div className="flex items-center h-400px bg-slate-800 rounded-2xl">
+            <div className="flex items-center h-400px bg-slate-800 rounded-2xl shadow-customShadow">
               <div className="m-4 w-400px">
                 <h1 className="text-3xl my-3 text-center font-bold">
                   {projectTitle}
@@ -31,7 +32,17 @@ const ProjectContainer = () => {
                 <p className="max-w-xl text-center text-lg text-gray-600 dark:text-gray-400">
                   {projectDescription}
                 </p>
-                <div className="flex gap-5 justify-center my-4">
+                <div className="flex gap-5 justify-center my-3">
+                  {techStack.map(({ name }, index) => (
+                    <div
+                      className="bg-slate-600 py-1 px-3 font-semibold rounded-md shadow-textStackShadow"
+                      key={index}
+                    >
+                      {name}
+                    </div>
+                  ))}
+                </div>
+                <div className="flex gap-5 justify-center">
                   <a
                     href={codeLink}
                     target="_blank"
