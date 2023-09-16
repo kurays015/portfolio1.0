@@ -12,3 +12,19 @@
 body {
   background-color: #09192d;
 }
+/* custom style for hover effect */
+.pokeApp,
+.movieFlix,
+.animuah {
+  transform: translateY(0);
+  transition: 3000ms ease-in-out;
+}
+.pokeApp:hover {
+  transform: translateY(-20%);
+}
+.movieFlix:hover {
+  transform: translateY(-46%);
+}
+.animuah:hover {
+  transform: translateY(-42%);
+}

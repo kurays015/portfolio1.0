@@ -35,14 +35,14 @@ const ProjectContainer = () => {
                   <a
                     href={codeLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer hover:text-slate-400"
+                    className="flex items-center gap-1 cursor-pointer text-slate-400 hover:text-gray-300"
                   >
                     Code{githubLogo}
                   </a>
                   <a
                     href={livePreviewLink}
                     target="_blank"
-                    className="flex items-center gap-1 cursor-pointer hover:text-slate-400"
+                    className="flex items-center gap-1 cursor-pointer text-slate-400 hover:text-gray-300"
                   >
                     Live Preview{livePreviewLogo}
                   </a>
@@ -53,7 +53,15 @@ const ProjectContainer = () => {
                   <a href={livePreviewLink} target="_blank">
                     <img
                       src={projectImg}
-                      className={`cursor-pointer w-full h-auto transform translate-y-0 transition-transform duration-4 ease-in-out hover:-translate-y-30`}
+                      className={`cursor-pointer w-full h-auto ${
+                        index === 0
+                          ? "pokeApp"
+                          : index === 1
+                          ? "movieFlix"
+                          : index === 2
+                          ? "animuah"
+                          : ""
+                      }`}
                       alt="AniMuah"
                     />
                   </a>
