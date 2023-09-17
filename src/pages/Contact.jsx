@@ -23,6 +23,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
   return (
     <>
@@ -38,7 +39,7 @@ const Contact = () => {
           <div className="mb-4">
             <label
               className="block text-white text-sm font-semibold mb-2"
-              for="subject"
+              htmlFor="subject"
             >
               Subject
             </label>
@@ -47,12 +48,13 @@ const Contact = () => {
               name="subject"
               type="text"
               placeholder="Subject"
+              required
             />
           </div>
           <div className="mb-4">
             <label
               className="block text-white text-sm font-semibold mb-2"
-              for="name"
+              htmlFor="name"
             >
               Name
             </label>
@@ -61,12 +63,13 @@ const Contact = () => {
               name="name"
               type="text"
               placeholder="Your Name"
+              required
             />
           </div>
           <div className="mb-4">
             <label
               className="block text-white text-sm font-semibold mb-2"
-              for="email"
+              htmlFor="email"
             >
               Email
             </label>
@@ -75,12 +78,13 @@ const Contact = () => {
               name="email"
               type="email"
               placeholder="Your Email"
+              required
             />
           </div>
           <div className="mb-6">
             <label
               className="block text-white text-sm font-semibold mb-2"
-              for="message"
+              htmlFor="message"
             >
               Message
             </label>
