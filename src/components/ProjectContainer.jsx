@@ -55,7 +55,7 @@ const ProjectContainer = () => {
                     target="_blank"
                     className="flex items-center gap-1 cursor-pointer text-slate-400 hover:text-gray-300"
                   >
-                    Live Preview{livePreviewLogo}
+                    Live Demo{livePreviewLogo}
                   </a>
                 </div>
               </div>
