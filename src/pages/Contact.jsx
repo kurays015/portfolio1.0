@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Footer from "../components/Footer";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [messageSent, setMessageSent] = useState("");
   const form = useRef();
 
   const sendEmail = e => {
@@ -17,17 +18,19 @@ const Contact = () => {
       )
       .then(
         result => {
-          console.log(result.text);
+          console.log(result);
+          setMessageSent("Successfully Sent!");
         },
         error => {
-          console.log(error.text);
+          console.log(error);
+          setMessageSent("Failed");
         }
       );
     e.target.reset();
   };
   return (
     <>
-      <div className="py-16 max-w-lg mx-auto">
+      <div className="py-16 max-w-lg mx-auto relative">
         <h1 className=" text-gray-300 font-semibold text-4xl my-5 text-center">
           Get in touch
         </h1>
@@ -104,6 +107,15 @@ const Contact = () => {
             </button>
           </div>
         </form>
+        <p
+          className={`${
+            messageSent === "Successfully Sent!"
+              ? "text-green-500"
+              : "text-red-500"
+          } text-center`}
+        >
+          {messageSent}
+        </p>
       </div>
       <Footer isAbsolute={true} />
     </>
