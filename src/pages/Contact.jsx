@@ -20,17 +20,19 @@ const Contact = () => {
         result => {
           console.log(result);
           setMessageSent("Successfully Sent!");
+          setTimeout(() => setMessageSent(""), 3000);
         },
         error => {
           console.log(error);
           setMessageSent("Failed");
+          setTimeout(() => setMessageSent(""), 3000);
         }
       );
     e.target.reset();
   };
   return (
     <>
-      <div className="py-16 max-w-lg mx-auto relative">
+      <div className="py-16 max-w-lg mx-auto">
         <h1 className=" text-gray-300 font-semibold text-4xl my-5 text-center">
           Get in touch
         </h1>
@@ -92,7 +94,7 @@ const Contact = () => {
               Message
             </label>
             <textarea
-              className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline max-h-200px"
               name="message"
               rows="5"
               placeholder="Your Message"
