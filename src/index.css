@@ -16,16 +16,20 @@ body {
 /* custom style for hover effect */
 .pokeApp,
 .movieFlix,
-.animuah {
+.animuah,
+.storeyfy {
   transform: translateY(0);
   transition: 3000ms ease-in-out;
 }
-.pokeApp:hover {
-  transform: translateY(-20%);
+.storeyfy:hover {
+  transform: translateY(-48%);
 }
 .movieFlix:hover {
   transform: translateY(-46%);
 }
 .animuah:hover {
   transform: translateY(-42%);
+}
+.pokeApp:hover {
+  transform: translateY(-20%);
 }

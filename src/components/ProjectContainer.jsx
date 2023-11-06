@@ -1,6 +1,13 @@
 import { myProjectsData } from "../ProjectsData";
 
 const ProjectContainer = () => {
+  function findIndex(index) {
+    if (index === 0) return "storeyfy";
+    if (index === 1) return "movieFlix";
+    if (index === 2) return "animuah";
+    if (index === 3) return "pokeApp";
+  }
+
   return (
     <>
       {myProjectsData.map(
@@ -64,15 +71,9 @@ const ProjectContainer = () => {
                   <a href={livePreviewLink} target="_blank">
                     <img
                       src={projectImg}
-                      className={`cursor-pointer w-full h-auto ${
-                        index === 0
-                          ? "pokeApp"
-                          : index === 1
-                          ? "movieFlix"
-                          : index === 2
-                          ? "animuah"
-                          : ""
-                      }`}
+                      className={`cursor-pointer w-full h-auto ${findIndex(
+                        index
+                      )}`}
                       alt="AniMuah"
                     />
                   </a>
