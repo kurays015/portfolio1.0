@@ -86,7 +86,5 @@ const ProjectContainer = () => {
     </>
   );
 };
-// text-white grid grid-cols-[repeat(auto-fill,minmax(650px,1fr))] gap-5 p-3
-// transform translate-y-0 transition-transform duration-10000 ease-in-out hover:-translate-y-scrollUp
 
 export default ProjectContainer;
